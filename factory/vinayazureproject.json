@@ -1,0 +1,9 @@
+{
+	"name": "vinayazureproject",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b233b7ac-154c-4f37-ab86-568892c586af",
+		"tenantId": "bf4c756f-d7fe-4675-8aff-ce7e673f85fc"
+	}
+}

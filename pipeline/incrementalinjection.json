@@ -31,7 +31,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "activity('Lastcdc').output.countselect * from @{pipeline().parameters.schema}.@{pipeline().parameters.table} where @{pipeline().parameters.cdn_col} > '@{activity('Lastcdc').output.value[0].cdc}'",
+							"value": "select * from @{pipeline().parameters.schema}.@{pipeline().parameters.table} where @{pipeline().parameters.cdc_col} > '@{activity('Lastcdc').output.value[0].cdc}'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -121,6 +121,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"variableName": "current",
 					"value": {
@@ -137,7 +138,7 @@
 			"table": {
 				"type": "string"
 			},
-			"cdn_col": {
+			"cdc_col": {
 				"type": "string"
 			}
 		},

@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "vinayazureproject"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"adminvinay_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://anshazurestorage.dfs.core.windows.net/"
+		},
+		"adminvinay_properties_typeProperties_server": {
+			"value": "spotifyazureprojectservervinay.database.windows.net"
+		},
+		"adminvinay_properties_typeProperties_database": {
+			"value": "spotifyazureproject"
+		},
+		"adminvinay_properties_typeProperties_userName": {
+			"value": "spotify"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
